@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/messages_view"
+        android:layout_weight="2"
+        android:divider="#fff"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btnSpeak"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_button"
+                android:src="@drawable/ic_baseline_mic_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hold to speak"
+
+                android:textSize="25dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
